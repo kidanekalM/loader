@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(39, 39, 39);
+}
+.leaf{
+
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    /* background-image: linear-gradient(135deg,lightgreen,darkgreen,darkgreen,lightgreen); */
+    border: 1.2px solid darkgreen;
+    background-color: blue;
+    border-radius: 60vw 0vh;
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 10px 2px;
+    top: 15vh;
+    left: 30vw;
+    /* overflow: hidden; */
+    animation-name: anim;
+    /* animation-duration: 5s; */
+    animation-iteration-count: infinite;
+    display: grid;
+}
+.bub{
+    height: max-content;
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 1px rgb(187, 187, 187);
+    border-radius: 280vh 280vh;
+    position: absolute;
+    top: 25vh;
+    left: 19vw;
+    z-index: 1;
+}
+.sidetab{
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    background-color: rgb(142, 134, 255);
+    background-image: linear-gradient(90deg,black,white);
+    box-shadow: 2px 0px 4px 1px rgb(194, 194, 194);
+    /* transform: rotate(50deg); */
+    border-radius: 30vh;
+    top: 10vh;
+    left: -15vh;
+}
+.center{
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 10vh;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid black;
+
+}
+.sidetab:hover{
+    transition: ease-in;
+    /* transform: rotate(50deg); */
+    left:0vw;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    from{     animation-duration: 3s;
+        animation-iteration-count: infinite;}
+    to{transform: rotate(360deg);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+}
+@keyframes animv {
+    from{     animation-duration: 3s;
+        animation-iteration-count: infinite;}
+    to{transform: rotate(-360deg);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+}
+
+@keyframes dry {
+    from{
+    background-color: green;
+
+    }
+    to{
+    background-image: linear-gradient(135deg,orange,darkgreen,orange);
+        background-color: rgb(75, 41, 0);
+        width: 34vw;
+        height: 39vw;
+        border: 1px dashed white;
+        /* transform:rotateY(80deg); */
+    }
+}
